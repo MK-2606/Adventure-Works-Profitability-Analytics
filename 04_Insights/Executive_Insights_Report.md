@@ -1,6 +1,6 @@
 # Executive Insights Report
 
-# Summary
+## ➤ Summary
 
 The business is demonstrating strong commercial performance, generating **$10.46M profit**, maintaining a **41.97% profit margin**, and achieving **211.07% revenue growth**. Growth and profitability remain aligned, indicating that expansion is creating value rather than simply increasing activity.
 
@@ -10,7 +10,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Key Business Insights
+## ➤ Key Business Insights
 
 | Insight | Supporting Evidence | Business Impact |
 |---------------|--------------------|----------------|
@@ -22,7 +22,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Key Risks
+## ➤ Key Risks
 
 | Risk | Reason |
 |------|--------|
@@ -32,7 +32,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Growth Opportunities
+## ➤ Growth Opportunities
 
 | Opportunity | Business Action |
 |------------|----------------|
@@ -43,7 +43,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Strategic Recommendations
+## ➤ Strategic Recommendations
 
 | Recommendation | Supporting Evidence | Expected Impact | Priority |
 |---------------|--------------------|----------------|----------|
@@ -55,7 +55,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Stakeholder Action Plan
+## ➤ Stakeholder Action Plan
 
 | Action | Reason | Expected Outcome |
 |---------|---------|------------------|
@@ -65,7 +65,7 @@ The strongest opportunity is to improve revenue quality by expanding high-margin
 
 ---
 
-# Conclusion
+## ➤ Conclusion
 
 The business is in a strong commercial position, combining substantial revenue growth with healthy profitability. Current performance demonstrates that growth is translating into value creation rather than margin sacrifice.
 
