@@ -46,29 +46,29 @@ This project was developed to determine whether commercial growth was translatin
 
 ### Growth Analysis
 
-- How does monthly revenue and order volume vary across the year, and are seasonal patterns consistent across 2015–2017?
-- What is the revenue contribution by product category, and how has category-level mix shifted over time?
-- What is the Average Order Value (AOV) trend, and how do AOV and Order Volume contribute to Revenue growth over time?
+1. How does monthly revenue and order volume vary across the year, and are seasonal patterns consistent across 2015–2017?
+2. What is the revenue contribution by product category, and how has category-level mix shifted over time?
+3. What is the Average Order Value (AOV) trend, and how do AOV and Order Volume contribute to Revenue growth over time?
 
 ### Regional Analysis
 
-- Which regions are driving or dragging overall revenue, and has that pattern shifted across the three years?
+4. Which regions are driving or dragging overall revenue, and has that pattern shifted across the three years?
 
 ### Returns Analysis
 
-- What is the return rate by product category, does it correlate with order volume, and does it vary significantly across territories?
-- Are high-return products also high-revenue products, and what does that imply for net revenue?
+5. What is the return rate by product category, does it correlate with order volume, and does it vary significantly across territories?
+6. Are high-return products also high-revenue products, and what does that imply for net revenue?
 
 ### Customer Analysis
 
-- Which customer segments generate the highest revenue, and are they growing or shrinking?
+7. Which customer segments generate the highest revenue, and are they growing or shrinking?
 
 ### Product & Profitability Analysis
 
-- Which products have high volume but low revenue contribution?
-- Which products have high revenue but low profit?
-- Which products, categories, and regions generate the highest profit?
-- Are we growing revenue at the expense of profitability?
+8. Which products have high volume but low revenue contribution?
+9. Which products have high revenue but low profit?
+10. Which products, categories, and regions generate the highest profit?
+11. Are we growing revenue at the expense of profitability?
 
 ---
 
@@ -224,101 +224,70 @@ Identify root causes behind business performance.
 
 ## DAX Measures Developed
 
-### Foundational Measures
-
-- Revenue
-- Cost
-- Orders
-- Units Sold
-- Return Quantity
-- Customer Count
-
-### Derived Measures
-
-- Profit
-- AOV
-- ASP
-- ARPC
-- Return Value
-- Net Revenue
-- Return Rate %
-
-### Advanced Measures
-
-- Profit Margin %
-- Revenue Contribution %
-- Mix Shift
-- Revenue Growth %
+| Foundational Measures | Derived Measures | Advanced Measures |
+|----------------------|------------------|-------------------|
+| Revenue | Profit | Profit Margin % |
+| Cost | AOV | Revenue Contribution % |
+| Orders | ASP | Mix Shift |
+| Units Sold | ARPC | Revenue Growth % |
+| Return Quantity | Return Value | — |
+| Customer Count | Net Revenue | — |
+| — | Return Rate % | — |
 
 ---
 
 ## Key Insights
 
-### Revenue Growth Remains Strong
+### 1. Revenue Growth Remains Strong
 
-Revenue Growth reached **211.07%**, indicating substantial commercial expansion.
+- Revenue Growth reached **211.07%**, indicating substantial commercial expansion.
+- Growth appears primarily driven by increased commercial activity rather than significant increases in Average Order Value.
 
-Growth appears primarily driven by increased commercial activity rather than significant increases in Average Order Value.
+### 2. Revenue Concentration Risk
 
----
+- The Bikes category contributes approximately **95% of category revenue**.
+- This creates a significant dependency on a single product category.
 
-### Revenue Concentration Risk
+### 3. Profitability Remains Healthy
 
-The Bikes category contributes approximately **95% of category revenue**.
+- Profit Margin remains near **42%**, suggesting growth is generally translating into value creation.
 
-This creates a significant dependency on a single product category.
+### 4. Return-Related Revenue Leakage
 
----
+- The Bikes category exhibits the highest return rates among major categories.
+- Reducing returns represents a direct profitability improvement opportunity.
 
-### Profitability Remains Healthy
+### 5. Regional Performance Is Concentrated
 
-Profit Margin remains near **42%**, suggesting growth is generally translating into value creation.
+- Australia consistently generates the highest revenue and profit.
+- This indicates both strong performance and concentration risk.
 
----
+### 6. Margin Quality Differs Across Categories
 
-### Return-Related Revenue Leakage
-
-The Bikes category exhibits the highest return rates among major categories.
-
-Reducing returns represents a direct profitability improvement opportunity.
-
----
-
-### Regional Performance Is Concentrated
-
-Australia consistently generates the highest revenue and profit.
-
-This indicates both strong performance and concentration risk.
-
----
-
-### Margin Quality Differs Across Categories
-
-Accessories generate stronger margins than several higher-revenue categories.
-
-Revenue scale and profitability quality are not always aligned.
+- Accessories generate stronger margins than several higher-revenue categories.
+- Revenue scale and profitability quality are not always aligned.
 
 ---
 
 ## Strategic Recommendations
 
-### Revenue Growth
+### 1. Revenue Growth
 
 Diversify growth beyond Bikes to reduce category concentration risk.
 
-### Profitability Improvement
+### 2. Profitability Improvement
 
 Review high-revenue, low-profit products for pricing, cost, and portfolio optimization opportunities.
 
-### Returns Reduction
+### 3. Returns Reduction
 
 Prioritize return reduction initiatives within the Bikes category.
 
-### Regional Strategy
+### 4. Regional Strategy
 
 Replicate successful commercial practices from Australia across lower-performing territories.
 
-### Product Strategy
+### 5. Product Strategy
 
 Increase focus on higher-margin products and cross-selling opportunities.
 
@@ -386,16 +355,21 @@ Increase focus on higher-margin products and cross-selling opportunities.
 
 ```text
 Adventure-Works-Profitability-Analytics/
-│
-├── 01_Business_Understanding/
-├── 02_Analytics_Planning/
-├── 03_Data_Modeling/
-├── 04_Data_Preparation/
-├── 05_DAX_Development/
-├── 06_Dashboard/
-├── 07_Insights_Recommendations/
-├── 08_Portfolio_Case_Study/
-└── Assets/
+├── README.md
+├── Business/
+│   ├── Business_Requirements_Document.pdf
+│   ├── Business_Decisions_Framework.md
+│   └── KPI_Framework.md
+├── Data/
+│   ├── Data_Model.png
+│   └── Data_Model_Documentation.md
+├── Dashboard/
+│   ├── Dashboard_Page_1.png
+│   └── Dashboard_Page_2.png
+├── Insights/
+│   └── Executive_Insights_Report.md
+└── Case_Study/
+    └── Adventure_Works_Case_Study.pdf
 ```
 
 ---
