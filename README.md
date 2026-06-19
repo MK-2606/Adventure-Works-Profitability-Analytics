@@ -271,25 +271,13 @@ Identify root causes behind business performance.
 
 ## Strategic Recommendations
 
-### 1. Revenue Growth
-
-Diversify growth beyond Bikes to reduce category concentration risk.
-
-### 2. Profitability Improvement
-
-Review high-revenue, low-profit products for pricing, cost, and portfolio optimization opportunities.
-
-### 3. Returns Reduction
-
-Prioritize return reduction initiatives within the Bikes category.
-
-### 4. Regional Strategy
-
-Replicate successful commercial practices from Australia across lower-performing territories.
-
-### 5. Product Strategy
-
-Increase focus on higher-margin products and cross-selling opportunities.
+| Recommendation | Business Action |
+|----------------|----------------|
+| 1. Revenue Growth | Diversify growth beyond Bikes to reduce category concentration risk. |
+| 2. Profitability Improvement | Review high-revenue, low-profit products for pricing, cost, and portfolio optimization opportunities. |
+| 3. Returns Reduction | Prioritize return reduction initiatives within the Bikes category. |
+| 4. Regional Strategy | Replicate successful commercial practices from Australia across lower-performing territories. |
+| 5. Product Strategy | Increase focus on higher-margin products and cross-selling opportunities. |
 
 ---
 
@@ -297,11 +285,11 @@ Increase focus on higher-margin products and cross-selling opportunities.
 
 | Finding | Recommendation | Expected Business Impact |
 |----------|---------------|--------------------------|
-| Revenue concentrated in Bikes | Diversify category growth | Lower revenue concentration risk |
-| High Bike return rate | Return reduction program | Higher Net Revenue |
-| Strong Australian performance | Replicate best practices | Regional growth improvement |
-| Margin variation across categories | Product mix optimization | Higher Profit Margin |
-| High-revenue low-profit products | Profitability review | Improved profit generation |
+| 1. Revenue concentrated in Bikes | Diversify category growth | Lower revenue concentration risk |
+| 2. High Bike return rate | Return reduction program | Higher Net Revenue |
+| 3. Strong Australian performance | Replicate best practices | Regional growth improvement |
+| 4. Margin variation across categories | Product mix optimization | Higher Profit Margin |
+| 5. High-revenue low-profit products | Profitability review | Improved profit generation |
 
 ---
 
@@ -318,36 +306,7 @@ Increase focus on higher-margin products and cross-selling opportunities.
 
 ## Skills Demonstrated
 
-### Business & Analytics
-
-- Business Understanding
-- Stakeholder Analysis
-- KPI Design
-- Business Question Development
-- Insight Generation
-- Recommendation Development
-
-### Data
-
-- Data Profiling
-- Data Quality Assessment
-- Data Modeling
-- Relationship Design
-- Data Validation
-
-### Power BI
-
-- Power Query
-- DAX Development
-- Dashboard Design
-- Interactive Reporting
-- Performance Analysis
-
-### Communication
-
-- Executive Reporting
-- Data Storytelling
-- Decision Support Analytics
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/ad25da29-fc35-411e-a9c0-a5adfff62d16" />
 
 ---
 
