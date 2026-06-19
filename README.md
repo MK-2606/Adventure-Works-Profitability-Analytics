@@ -1,6 +1,6 @@
 # Adventure Works Profitability & Commercial Performance Analytics
 
-## Project Overview
+## ➤ Project Overview
 
 This project analyzes Adventure Works sales, returns, customer, product, and territory data to evaluate business performance through three strategic lenses:
 
@@ -12,7 +12,7 @@ The objective was to support a Profitability Analysis Stakeholder in understandi
 
 ---
 
-## Business Problem
+## ➤ Business Problem
 
 Revenue growth alone does not guarantee business success.
 
@@ -28,7 +28,7 @@ This project was developed to determine whether commercial growth was translatin
 
 ---
 
-## Stakeholder
+## ➤ Stakeholder
 
 ### Profitability Analysis Stakeholder
 
@@ -42,7 +42,7 @@ This project was developed to determine whether commercial growth was translatin
 
 ---
 
-## Business Questions
+## ➤ Business Questions
 
 ### Growth Analysis
 
@@ -72,7 +72,7 @@ This project was developed to determine whether commercial growth was translatin
 
 ---
 
-## KPI Framework
+## ➤ KPI Framework
 
 ### Outcome KPIs
 
@@ -107,7 +107,7 @@ This project was developed to determine whether commercial growth was translatin
 
 ---
 
-## Dataset Information
+## ➤ Dataset Information
 
 | Item | Details |
 |--------|---------|
@@ -120,7 +120,7 @@ This project was developed to determine whether commercial growth was translatin
 
 ---
 
-## Data Preparation
+## ➤ Data Preparation
 
 Data preparation activities included:
 
@@ -146,7 +146,7 @@ Validated:
 
 ---
 
-## Data Model
+## ➤ Data Model
 
 ### Adventure Works Dimensional Model
 
@@ -160,7 +160,7 @@ The model combines star-schema principles with a snowflake structure in the prod
 
 ---
 
-## Assumptions & Constraints
+## ➤ Assumptions & Constraints
 
 | ID | Assumption / Constraint |
 |----|-------------------------|
@@ -177,7 +177,7 @@ The model combines star-schema principles with a snowflake structure in the prod
 
 ---
 
-## Dashboard Solution
+## ➤ Dashboard Solution
 
 A two-page dashboard was developed to support executive monitoring and business investigation.
 
@@ -222,7 +222,7 @@ Identify root causes behind business performance.
 
 ---
 
-## DAX Measures Developed
+## ➤ DAX Measures Developed
 
 | Foundational Measures | Derived Measures | Advanced Measures |
 |----------------------|------------------|-------------------|
@@ -236,7 +236,7 @@ Identify root causes behind business performance.
 
 ---
 
-## Key Insights
+## ➤ Key Insights
 
 ### 1. Revenue Growth Remains Strong
 
@@ -269,7 +269,7 @@ Identify root causes behind business performance.
 
 ---
 
-## Strategic Recommendations
+## ➤ Strategic Recommendations
 
 | Recommendation | Business Action |
 |----------------|----------------|
@@ -281,7 +281,7 @@ Identify root causes behind business performance.
 
 ---
 
-## Business Impact Framework
+## ➤ Business Impact Framework
 
 | Finding | Recommendation | Expected Business Impact |
 |----------|---------------|--------------------------|
@@ -293,7 +293,7 @@ Identify root causes behind business performance.
 
 ---
 
-## Tools Used
+## ➤ Tools Used
 
 - Power BI
 - Power Query
@@ -304,13 +304,13 @@ Identify root causes behind business performance.
 
 ---
 
-## Skills Demonstrated
+## ➤ Skills Demonstrated
 
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/ad25da29-fc35-411e-a9c0-a5adfff62d16" />
 
 ---
 
-## Repository Structure
+## ➤ Repository Structure
 
 ```text
 Adventure-Works-Profitability-Analytics/
@@ -332,7 +332,7 @@ Adventure-Works-Profitability-Analytics/
 
 ---
 
-## Project Outcome
+## ➤ Project Outcome
 
 This project demonstrates an end-to-end analytics workflow covering:
 
