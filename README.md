@@ -150,7 +150,7 @@ Validated:
 
 ### Adventure Works Dimensional Model
 
-_Insert Data Model Screenshot Here_
+<img width="657" height="743" alt="Screenshot 2026-06-19 220400" src="https://github.com/user-attachments/assets/15dea035-f4b3-4b75-87e8-cca738edd2d0" />
 
 The model combines star-schema principles with a snowflake structure in the product hierarchy:
 
@@ -199,7 +199,7 @@ Provide a high-level view of growth, profitability, and revenue quality.
 - Revenue, Cost & Profit Trend Analysis
 - Profitability Decomposition
 
-_Insert Dashboard Page 1 Screenshot Here_
+<img width="1372" height="617" alt="Screenshot 2026-06-19 000852" src="https://github.com/user-attachments/assets/8b99a24e-04f5-408e-b3c2-a3447a8cdd54" />
 
 ---
 
@@ -218,7 +218,7 @@ Identify root causes behind business performance.
 - Revenue vs Return Risk Analysis
 - Margin Analysis
 
-_Insert Dashboard Page 2 Screenshot Here_
+<img width="1162" height="712" alt="Screenshot 2026-06-19 000955" src="https://github.com/user-attachments/assets/65570d4f-a1fb-424f-a54f-5e764c5fd896" />
 
 ---
 
