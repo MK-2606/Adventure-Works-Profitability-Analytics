@@ -356,19 +356,18 @@ Increase focus on higher-margin products and cross-selling opportunities.
 ```text
 Adventure-Works-Profitability-Analytics/
 ├── README.md
-├── Business/
+├── 01_Business/
 │   ├── Business_Requirements_Document.pdf
-│   ├── Business_Decisions_Framework.md
 │   └── KPI_Framework.md
-├── Data/
+├── 02_Data/
 │   ├── Data_Model.png
 │   └── Data_Model_Documentation.md
-├── Dashboard/
-│   ├── Dashboard_Page_1.png
-│   └── Dashboard_Page_2.png
-├── Insights/
+├── 03_Dashboard/
+│   ├── Page_1.png
+│   └── Page_2.png
+├── 04_Insights/
 │   └── Executive_Insights_Report.md
-└── Case_Study/
+└── 05_Case_Study/
     └── Adventure_Works_Case_Study.pdf
 ```
 
