@@ -1,7 +1,4 @@
 # KPI Framework
-## Adventure Works: Profitability & Commercial Performance Analytics
-
----
 
 # 1. KPI Philosophy
 
