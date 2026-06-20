@@ -19,11 +19,11 @@ This project evaluates whether Adventure Works' commercial growth (2015–2017) 
 | Metric | Value |
 |---|---|
 | Revenue Growth | **211.07%** — driven mainly by order volume, not AOV |
-| Profit Margin | **~42%** — healthy, growth is largely value-accretive |
+| Profit | **$10.46M**, at a **41.97%** margin — growth is largely value-accretive |
 | Bikes category revenue share | **~95%** — high concentration risk |
-| Bikes return rate | **Highest among major categories** — direct margin leakage |
+| Bikes return rate | **~3.1%** — highest among major categories, direct margin leakage |
 | Top region | **Australia** — leads revenue and profit, but also concentration risk |
-| Margin quality | **Accessories outperform higher-revenue categories** — scale ≠ margin |
+| Margin quality | Accessories **(~63%)** outperform Bikes **(~41%)** — scale ≠ margin |
 
 ---
 
@@ -66,7 +66,7 @@ Hybrid dimensional model: Sales and Returns as fact tables, with a snowflaked pr
 
 This project was scoped around 11 business questions across Growth, Regional, Returns, Customer, and Product/Profitability analysis, supported by a 3-tier KPI framework (Outcome / Diagnostic / Supporting metrics).
 
-📄 Full question set and KPI definitions: [`01_Business_Understanding/KPI_Framework.md`](01_Business_Understanding/KPI_Framework.md)
+📄 Full KPI definitions and investigation logic: [`01_Business_Understanding/KPI_Framework.md`](01_Business_Understanding/KPI_Framework.md)
 <br>
 📄 Formal requirements: [`01_Business_Understanding/Business_Requirements_Document.pdf`](01_Business_Understanding/Business_Requirements_Document.pdf)
 
