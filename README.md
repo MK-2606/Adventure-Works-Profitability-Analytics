@@ -2,7 +2,7 @@
 
 **Tools:** Power BI · Power Query · DAX · SQL · Excel
 <br>
-**Dataset:** Adventure Works Sales Data — [Kaggle]([https://www.kaggle.com/datasets](https://www.kaggle.com/datasets/ukveteran/adventure-works/data?select=AdventureWorks))
+**Dataset:** Adventure Works Sales Data — [Kaggle](https://www.kaggle.com/datasets/ukveteran/adventure-works/data?select=AdventureWorks)
 
 ---
 
