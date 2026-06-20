@@ -1,316 +1,130 @@
 # Adventure Works Profitability & Commercial Performance Analytics
 
-## ➤ Project Overview
-
-This project analyzes Adventure Works sales, returns, customer, product, and territory data to evaluate business performance through three strategic lenses:
-
-- Revenue Growth
-- Profitability
-- Revenue Quality
-
-The objective was to support a Profitability Analysis Stakeholder in understanding not only how the business is performing, but why performance is changing and where corrective action or investment should be directed.
+**Tools:** Power BI · Power Query · DAX · SQL · Excel
+<br>
+**Dataset:** Adventure Works Sales Data — [Kaggle]([https://www.kaggle.com/datasets](https://www.kaggle.com/datasets/ukveteran/adventure-works/data?select=AdventureWorks))
 
 ---
 
-## ➤ Business Problem
+## Business Problem
 
-Revenue growth alone does not guarantee business success.
+Revenue growth alone doesn't guarantee business success — margin erosion, rising costs, return leakage, and regional underperformance can all hide behind a healthy top line.
 
-A business can experience:
-
-- Margin erosion
-- Rising costs
-- Product profitability issues
-- Return-related revenue leakage
-- Regional underperformance
-
-This project was developed to determine whether commercial growth was translating into sustainable profitability.
+This project evaluates whether Adventure Works' commercial growth (2015–2017) is translating into **sustainable profitability**, for a Profitability Analysis stakeholder responsible for monitoring financial performance and allocating resources.
 
 ---
 
-## ➤ Stakeholder
+## Key Findings
 
-### Profitability Analysis Stakeholder
-
-**Responsibilities:**
-
-- Monitor financial performance
-- Evaluate commercial efficiency
-- Improve profitability
-- Allocate resources effectively
-- Support growth initiatives
-
----
-
-## ➤ Business Questions
-
-### Growth Analysis
-
-1. How does monthly revenue and order volume vary across the year, and are seasonal patterns consistent across 2015–2017?
-2. What is the revenue contribution by product category, and how has category-level mix shifted over time?
-3. What is the Average Order Value (AOV) trend, and how do AOV and Order Volume contribute to Revenue growth over time?
-
-### Regional Analysis
-
-4. Which regions are driving or dragging overall revenue, and has that pattern shifted across the three years?
-
-### Returns Analysis
-
-5. What is the return rate by product category, does it correlate with order volume, and does it vary significantly across territories?
-6. Are high-return products also high-revenue products, and what does that imply for net revenue?
-
-### Customer Analysis
-
-7. Which customer segments generate the highest revenue, and are they growing or shrinking?
-
-### Product & Profitability Analysis
-
-8. Which products have high volume but low revenue contribution?
-9. Which products have high revenue but low profit?
-10. Which products, categories, and regions generate the highest profit?
-11. Are we growing revenue at the expense of profitability?
+| Metric | Value |
+|---|---|
+| Revenue Growth | **211.07%** — driven mainly by order volume, not AOV |
+| Profit Margin | **~42%** — healthy, growth is largely value-accretive |
+| Bikes category revenue share | **~95%** — high concentration risk |
+| Bikes return rate | **Highest among major categories** — direct margin leakage |
+| Top region | **Australia** — leads revenue and profit, but also concentration risk |
+| Margin quality | **Accessories outperform higher-revenue categories** — scale ≠ margin |
 
 ---
 
-## ➤ KPI Framework
+## Insights → Recommendations → Impact
 
-### Outcome KPIs
-
-| KPI | Purpose |
-|------|----------|
-| Profit | Measures value creation after product-related costs |
-| Profit Margin % | Measures efficiency of converting revenue into profit |
-| Revenue Growth % | Measures commercial expansion over time |
-
-### Diagnostic Metrics
-
-- Revenue
-- Cost
-- Orders
-- AOV
-- ASP
-- ARPC
-- Revenue Contribution %
-- Return Rate %
-- Net Revenue
-- Mix Shift
-- Customer Count
-
-### Supporting Metrics
-
-- Product Category
-- Product
-- Region
-- Customer Segment
-- Month
-- Year
+| Insight | Recommendation | Expected Impact |
+|---|---|---|
+| Revenue growth (211%) is volume-driven, not price-driven | Sustain growth while monitoring profitability | Continued expansion with controlled margin risk |
+| Bikes = ~95% of category revenue | Diversify growth across other categories | Lower revenue concentration risk |
+| Profit Margin holds near 42% | Keep prioritizing profitable products/regions | Sustained profitability |
+| Bikes has the highest return rate | Targeted return-reduction initiatives | Higher Net Revenue and Profit |
+| Australia dominates revenue and profit | Replicate its commercial practices in weaker regions | Improved regional performance |
+| Margin varies significantly by category | Optimize product mix toward higher-margin categories | Higher Profit Margin % |
 
 ---
 
-## ➤ Dataset Information
+## Data Model
 
-| Item | Details |
-|--------|---------|
-| Dataset | Adventure Works |
-| Date Range | 1 January 2015 – 30 June 2017 |
-| Total Sales Records | 56,046 |
-| Modeling Approach | Hybrid Dimensional Model |
-| Fact Tables | Sales, Returns |
-| Dimension Tables | Customers, Products, Product Categories, Product Subcategories, Territories, Calendar |
+Hybrid dimensional model: Sales and Returns as fact tables, with a snowflaked product hierarchy (Products → Subcategories → Categories) and Customer/Territory/Calendar dimensions for context.
+
+![Data Model](02_Data/Data_Model.png)
+
+**Dataset:** 56,046 sales records · Jan 2015 – Jun 2017 (H1 2017 partial)
 
 ---
 
-## ➤ Data Preparation
+## Dashboard
 
-Data preparation activities included:
+**Page 1 — Executive Performance:** Profit, Profit Margin, and Revenue Growth KPIs; revenue trend, AOV, contribution, and mix-shift analysis.
 
-- Data Profiling
-- Data Quality Assessment
-- Referential Integrity Validation
-- Duplicate Validation
-- Data Type Validation
-- Relationship Validation
-- Transformation Design
-- Power Query Implementation
+![Executive Dashboard](03_Dashboard/Page_1.png)
 
-### Data Quality Validation
+**Page 2 — Business Drivers:** Returns, product profitability, customer segments, regional performance, and margin analysis — built to identify root causes behind Page 1's numbers.
 
-Validated:
-
-- Foreign Key Integrity
-- Primary Key Uniqueness
-- Data Types
-- Missing Values
-- Duplicate Records
-- Relationship Consistency
+![Business Drivers Dashboard](03_Dashboard/Page_2.png)
 
 ---
 
-## ➤ Data Model
+## Business Questions & KPI Framework
 
-### Adventure Works Dimensional Model
+This project was scoped around 11 business questions across Growth, Regional, Returns, Customer, and Product/Profitability analysis, supported by a 3-tier KPI framework (Outcome / Diagnostic / Supporting metrics).
 
-<img width="657" height="743" alt="Screenshot 2026-06-19 220400" src="https://github.com/user-attachments/assets/15dea035-f4b3-4b75-87e8-cca738edd2d0" />
-
-The model combines star-schema principles with a snowflake structure in the product hierarchy:
-
-- Sales and Returns serve as fact tables.
-- Product hierarchy is normalized into Products → Subcategories → Categories.
-- Customers, Territories, and Calendar provide analytical context.
+📄 Full question set and KPI definitions: [`01_Business/KPI_Framework.md`](01_Business/KPI_Framework.md)
+<br>
+📄 Formal requirements: [`01_Business/Business_Requirements_Document.pdf`](01_Business/Business_Requirements_Document.pdf)
 
 ---
 
-## ➤ Assumptions & Constraints
+## Assumptions & Constraints
 
 | ID | Assumption / Constraint |
-|----|-------------------------|
+|---|---|
 | AC-01 | Dataset contains partial 2017 data (H1 only) |
 | AC-02 | Returns table does not contain CustomerKey |
 | AC-03 | Returns do not include return reasons |
 | AC-04 | Discount information unavailable |
-| AC-05 | Revenue derived from ProductPrice × OrderQuantity |
-| AC-06 | Cost derived from ProductCost × OrderQuantity |
-| AC-07 | Profit calculated as Revenue − Cost |
-| AC-08 | Profit Margin derived from Profit and Revenue |
+| AC-05–08 | Revenue, Cost, Profit, and Margin derived from ProductPrice, ProductCost, and OrderQuantity |
 | AC-09 | OrderNumber does not support basket analysis |
 | AC-10 | Customer segmentation limited to available attributes |
 
 ---
 
-## ➤ Dashboard Solution
+## How to Reproduce
 
-A two-page dashboard was developed to support executive monitoring and business investigation.
+1. Download the Adventure Works dataset from Kaggle *(add exact link)*.
+2. Load Sales, Returns, Customers, Products, Product Categories/Subcategories, Territories, and Calendar tables into Power BI.
+3. Apply data quality checks: FK integrity, PK uniqueness, missing values, duplicates (see Data Preparation below).
+4. Build the dimensional model per `02_Data/Data_Model_Documentation.md`.
+5. Recreate DAX measures (see below) or reference `04_Insights/Executive_Insights_Report.md` for full measure logic.
 
-### Page 1 — Executive Performance Dashboard
-
-**Objective:**
-
-Provide a high-level view of growth, profitability, and revenue quality.
-
-**Key Components:**
-
-- Profit KPI
-- Profit Margin KPI
-- Revenue Growth KPI
-- Revenue Trend Analysis
-- Orders & AOV Analysis
-- Revenue Contribution Analysis
-- Mix Shift Analysis
-- Revenue, Cost & Profit Trend Analysis
-- Profitability Decomposition
-
-<img width="1372" height="617" alt="Screenshot 2026-06-19 000852" src="https://github.com/user-attachments/assets/8b99a24e-04f5-408e-b3c2-a3447a8cdd54" />
+> Note: no `.pbix` file is currently included in this repo — screenshots and documentation represent the build. A shareable `.pbix` may be added in a future update.
 
 ---
 
-### Page 2 — Business Drivers Dashboard
+## Data Preparation
 
-**Objective:**
-
-Identify root causes behind business performance.
-
-**Key Components:**
-
-- Returns Analysis
-- Product Profitability Analysis
-- Customer Segment Analysis
-- Regional Performance Analysis
-- Revenue vs Return Risk Analysis
-- Margin Analysis
-
-<img width="1162" height="712" alt="Screenshot 2026-06-19 000955" src="https://github.com/user-attachments/assets/65570d4f-a1fb-424f-a54f-5e764c5fd896" />
+Validated foreign key integrity, primary key uniqueness, data types, missing values, duplicate records, and relationship consistency before modeling. Transformations implemented in Power Query.
 
 ---
 
-## ➤ DAX Measures Developed
+## DAX Measures Developed
 
-| Foundational Measures | Derived Measures | Advanced Measures |
-|----------------------|------------------|-------------------|
-| Revenue | Profit | Profit Margin % |
-| Cost | AOV | Revenue Contribution % |
-| Orders | ASP | Mix Shift |
-| Units Sold | ARPC | Revenue Growth % |
-| Return Quantity | Return Value | — |
-| Customer Count | Net Revenue | — |
-| — | Return Rate % | — |
+| Foundational | Derived | Advanced |
+|---|---|---|
+| Revenue, Cost, Orders, Units Sold, Return Quantity, Customer Count | Profit, AOV, ASP, ARPC, Return Value, Net Revenue, Return Rate % | Profit Margin %, Revenue Contribution %, Mix Shift, Revenue Growth % |
 
 ---
 
-## ➤ Key Insights
+## Tools & Their Role
 
-### 1. Revenue Growth Remains Strong
-
-- Revenue Growth reached **211.07%**, indicating substantial commercial expansion.
-- Growth appears primarily driven by increased commercial activity rather than significant increases in Average Order Value.
-
-### 2. Revenue Concentration Risk
-
-- The Bikes category contributes approximately **95% of category revenue**.
-- This creates a significant dependency on a single product category.
-
-### 3. Profitability Remains Healthy
-
-- Profit Margin remains near **42%**, suggesting growth is generally translating into value creation.
-
-### 4. Return-Related Revenue Leakage
-
-- The Bikes category exhibits the highest return rates among major categories.
-- Reducing returns represents a direct profitability improvement opportunity.
-
-### 5. Regional Performance Is Concentrated
-
-- Australia consistently generates the highest revenue and profit.
-- This indicates both strong performance and concentration risk.
-
-### 6. Margin Quality Differs Across Categories
-
-- Accessories generate stronger margins than several higher-revenue categories.
-- Revenue scale and profitability quality are not always aligned.
+| Tool | Used For |
+|---|---|
+| Power BI | Data modeling and dashboard development |
+| Power Query | Data cleaning, transformation, validation |
+| DAX | KPI, profitability, and growth calculations |
+| SQL | Data querying and validation |
+| Excel | Data exploration and validation |
 
 ---
 
-## ➤ Strategic Recommendations
-
-| Recommendation | Business Action |
-|----------------|----------------|
-| 1. Revenue Growth | Diversify growth beyond Bikes to reduce category concentration risk. |
-| 2. Profitability Improvement | Review high-revenue, low-profit products for pricing, cost, and portfolio optimization opportunities. |
-| 3. Returns Reduction | Prioritize return reduction initiatives within the Bikes category. |
-| 4. Regional Strategy | Replicate successful commercial practices from Australia across lower-performing territories. |
-| 5. Product Strategy | Increase focus on higher-margin products and cross-selling opportunities. |
-
----
-
-## ➤ Business Impact Framework
-
-| Finding | Recommendation | Expected Business Impact |
-|----------|---------------|--------------------------|
-| 1. Revenue concentrated in Bikes | Diversify category growth | Lower revenue concentration risk |
-| 2. High Bike return rate | Return reduction program | Higher Net Revenue |
-| 3. Strong Australian performance | Replicate best practices | Regional growth improvement |
-| 4. Margin variation across categories | Product mix optimization | Higher Profit Margin |
-| 5. High-revenue low-profit products | Profitability review | Improved profit generation |
-
----
-
-## ➤ Tools Used
-
-- Power BI
-- Power Query
-- DAX
-- SQL
-- BigQuery
-- Excel
-
----
-
-## ➤ Skills Demonstrated
-
-<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/ad25da29-fc35-411e-a9c0-a5adfff62d16" />
-
----
-
-## ➤ Repository Structure
+## Repository Structure
 
 ```text
 Adventure-Works-Profitability-Analytics/
@@ -332,17 +146,4 @@ Adventure-Works-Profitability-Analytics/
 
 ---
 
-## ➤ Project Outcome
-
-This project demonstrates an end-to-end analytics workflow covering:
-
-- Business Understanding
-- KPI Design
-- Data Modeling
-- Data Preparation
-- DAX Development
-- Dashboard Development
-- Insight Generation
-- Business Recommendation Formulation
-
-The final solution enables stakeholders to move from performance monitoring to actionable decision-making through structured profitability and commercial performance analysis.
+*Feedback and questions welcome via GitHub Issues.*
