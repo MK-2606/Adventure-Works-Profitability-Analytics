@@ -66,9 +66,9 @@ Hybrid dimensional model: Sales and Returns as fact tables, with a snowflaked pr
 
 This project was scoped around 11 business questions across Growth, Regional, Returns, Customer, and Product/Profitability analysis, supported by a 3-tier KPI framework (Outcome / Diagnostic / Supporting metrics).
 
-📄 Full question set and KPI definitions: [`01_Business/KPI_Framework.md`](01_Business/KPI_Framework.md)
+📄 Full question set and KPI definitions: [`01_Business_Understanding/KPI_Framework.md`](01_Business_Understanding/KPI_Framework.md)
 <br>
-📄 Formal requirements: [`01_Business/Business_Requirements_Document.pdf`](01_Business/Business_Requirements_Document.pdf)
+📄 Formal requirements: [`01_Business_Understanding/Business_Requirements_Document.pdf`](01_Business_Understanding/Business_Requirements_Document.pdf)
 
 ---
 
@@ -91,8 +91,8 @@ This project was scoped around 11 business questions across Growth, Regional, Re
 1. Download the Adventure Works dataset from Kaggle *(add exact link)*.
 2. Load Sales, Returns, Customers, Products, Product Categories/Subcategories, Territories, and Calendar tables into Power BI.
 3. Apply data quality checks: FK integrity, PK uniqueness, missing values, duplicates (see Data Preparation below).
-4. Build the dimensional model per `02_Data/Data_Model_Documentation.md`.
-5. Recreate DAX measures (see below) or reference `04_Insights/Executive_Insights_Report.md` for full measure logic.
+4. Build the dimensional model per [`02_Data/Data_Model_Documentation.md`](02_Data/Data_Model_Documentation.md).
+5. Recreate DAX measures (see below) or reference [`04_Insights/Executive_Insights_Report.md`](04_Insights/Executive_Insights_Report.md) for full measure logic.
 
 > Note: no `.pbix` file is currently included in this repo — screenshots and documentation represent the build. A shareable `.pbix` may be added in a future update.
 
