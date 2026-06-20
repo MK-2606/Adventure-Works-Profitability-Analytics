@@ -92,9 +92,7 @@ This project was scoped around 11 business questions across Growth, Regional, Re
 2. Load Sales, Returns, Customers, Products, Product Categories/Subcategories, Territories, and Calendar tables into Power BI.
 3. Apply data quality checks: FK integrity, PK uniqueness, missing values, duplicates (see Data Preparation below).
 4. Build the dimensional model per [`02_Data/Data_Model_Documentation.md`](02_Data/Data_Model_Documentation.md).
-5. Recreate DAX measures (see below) or reference [`04_Insights/Executive_Insights_Report.md`](04_Insights/Executive_Insights_Report.md) for full measure logic.
-
-> Note: no `.pbix` file is currently included in this repo — screenshots and documentation represent the build. A shareable `.pbix` may be added in a future update.
+5. Recreate DAX measures using [`03_Dashboard/DAX_Measures.md`](03_Dashboard/DAX_Measures.md) for full measure logic.
 
 ---
 
